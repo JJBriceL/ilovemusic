@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imagenes/indie.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+div.logo img {
+    width: 10em;
+}
+.franja {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.icon_menu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    font-size: 1.5em;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 50px;
+    z-index: 1000;
+    transition: height 0.3s linear;
+    height: 0;
+    overflow: hidden;
+}
+.mostrar {
+    height: 300px;
+}
+.link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #9802d3;
+}
+
+.link:hover {
+    background: #d30203;
+}
+
+.seleccionado {
+    background: #d30203;
+}
+
+h1.titulo {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.boton_cabecera {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #d30203;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.boton_cabecera:hover {
+    background: #d30203;
+}
+/*************************Estilos seccion principal************************/
+.principal {
+    width: 100%;
+}
+
+h2.titulo_principal {
+    width: 100%;
+    text-align: center;
+    color: #d30203;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_principal:after {
+    content: '';
+    width: 200px;
+    height: 4px;
+    background-color: #d30203;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.promo {
+    width: 100%;
+    margin: 5px;
+}
+
+.promo span [class*="fa-"] {
+    display: block;
+    text-align: center;
+    color: #d30203;
+    font-size: 80px;
+}
+h3.titulo_promo {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.texto_promo {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/****************Estilos seccion telefono******************/
+
+.telefono {
+    width: 100%;
+}
+.imagen_telefono {
+    width: 100%;
+}
+
+.titulo_telefono {
+    width: 100%;
+    text-align: center;
+    color: #d30203;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_telefono:after {
+    content: '';
+    width: 200px;
+    height: 4px;
+    background-color: #d30203;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+div.imagen_telefono img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.titulo_numero {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #d30203;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.texto_descripcion {
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*********************************************/
+
+.tiendas {
+    width: 100%;
+}
+
+.titulo_tiendas {
+    width: 100%;
+    text-align: center;
+    color: #d30203;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_tiendas:after {
+    content: '';
+    width: 200px;
+    height: 4px;
+    background-color: #d30203;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+ .nuestras_tiendas {
+     width: 100%;
+ }
+
+ .titulo_tienda {
+     width: 100%;
+     text-align: center;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-size: 25px;
+ }
+
+ .nuestras_tiendas img.img_tienda {
+     width: 100%;
+ }
+
+ .lista_tienda {
+     list-style: none;
+     line-height: 30px;
+ }
+
+.nuestras_tiendas [class*="fa-"] {
+    margin: 10px;
+    color: #d30203;
+}
+
+/*******************Estilos sección Opinión de clientes********************/
+
+.reseñas {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/clientes.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.titulo_reseñas {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    color: #fff;
+}
+
+.titulo_clientes:after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.testimonios {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.texto_testimonios {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.imagen_perfil {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.nombre_perfil {
+    margin-top: -50px;
+    margin-left: 150px;
+}
+/**************Estilos footer******************/
+
+footer {
+    background: #17263c;
+    color: #fff;
+}
+
+.pie {
+    width: 100%;
+}
+
+.item_pie {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_pie {
+    width: 100%;
+    text-align: center;
+}
+
+.texto_pie {
+    margin: 10px;
+}
+
+.lista_pie {
+    list-style: none;
+}
+.link_pie {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.derechos {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+
+/**************Estilos responsive**************/
+
+@media screen and (min-width: 768px) {
+    h1.titulo {
+        font-size: 65px;
+    }
+
+    .promo {
+        width: 45%;
+        margin: 10px;
+    }
+    .descripcion {
+        width: 45%;
+        margin: 10px;
+    }
+    .telefono {
+        align-items: flex-start;
+    }
+    .nuestras_tiendas {
+        width: 45%;
+        margin: 10px;
+    }
+    .testimonios {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .item_pie {
+        width: 45%;
+        margin: 10px;
+    }
+    .pie {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav.flex {
+        justify-content: left;
+    }
+    .logo img {
+        display: block;
+        margin-top: 20px;
+
+    }
+    h1.titulo {
+        font-size: 80px;
+    }
+    .icon_menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -150px;
+        margin-left: 50%;
+    }
+    .menu li {
+        list-style: none;
+    }
+    .link {
+        margin-left: 15px;
+    }
+    .nuestras_tiendas {
+        width: 23%;
+    }
+    .testimonios {
+        width: 23%;
+    }
+    .clientes {
+        align-items: flex-start;
+    }
+    .item_pie {
+        width: 31%;
+    }
+}
