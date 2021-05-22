@@ -12,8 +12,8 @@
   .header {
     padding: 80px;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(suri/meerkat-282129.png);
-    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(suri/middle.png);
+    height: default;
     background-position: center;
     background-size: cover;
     }
