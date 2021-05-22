@@ -22,7 +22,28 @@
   .header h1 {
     font-size: 40px;
   }
-  
+
+  ul.left {
+    float: left;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    list-style-position: inside;
+    list-style-type: square;
+    }
+    
+    ul.right {
+    float: right;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    list-style-position: inside;
+    list-style-type: square;
+    }
+
+
   /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
   .navbar {
     overflow: hidden;
@@ -106,8 +127,8 @@ footer {
 
 .item_pie {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20%;
+    margin-bottom: 21%;
 }
 
 .titulo_pie {
