@@ -1,419 +1,296 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;  
-}
+*{
+    box-sizing: border-box   
+  }
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  
+  
+  
+  
+  
+  
+  /* EMPEZANDO CON CSS PARA PANTALLA PEQUEÑA*/
+  
+  h1{
+      font-size: 30px;
+      font-weight: 800;
+  }
+  
+  h2 {
+      font-size: 24px;
+      font-weight: 700;
+  }
+  
+  body{
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  .lanzador-menu {     
+      position: absolute;
+      margin-top: 57px;
+      color: white;
+      text-decoration: none;
+      right: 25px;
+      
+  }
+  
+  .logo img{
+      position: absolute;
+      margin: 40px 20px;
+      width: 120px;
+  }
+  
+  .navegacion {
+      background-color: #241d1b;
+      padding-left: 20px;
+      padding-bottom: 40px;
+      line-height: 1.3;
+  }
+  
+  .navegacion a {
+      color: aliceblue;
+      font-size: 10px;
+      text-decoration-line: none;
+  }
+  .encabezado {
+      padding: 20px;
+      line-height: 1.2;
+      background-image: url(/imagenes/indie.jpg);
+      background-size: cover;
+      color: #080808;
+      text-align: center;
+      padding-top: 130px;
+      padding-bottom: 50px;
+  }
+  
+  .brunch {
+      background-color: #d03b40;
+      color: #f5f0ed;
+      padding: 40px 20px;
+      line-height: 1.2;
+      text-align: center;
+  }
+  
+  .celebra { 
+      color:#d03b40;
+      background-color: #ded6c0;
+      padding: 40px 20px;
+      line-height: 1.2;
+      text-align: center;
+  }
+  
+  .desayunar {
+      background-image: url(Fondo2.jpg);
+      background-size: cover;
+      color: #f5f0ed;
+      padding: 40px 20px;
+      line-height: 1.2;
+      text-align: center;
+  }
+  
+  .desayunar div p {
+      border-style: solid;
+      border-color: #f5f0ed;
+      border-width: 2px;
+      padding: 10px 20px;
+      max-width: 400px;
+      margin: auto;
+  }
+  
+  .pan { 
+      background-color: #f5f0ed;
+      color: #3c3c3b;
+      padding: 15px;
+      padding-bottom: 40px;
+      line-height: 1.2;
+  }
+  .contacta { 
+      background-color: #ded6c0;
+      color: #d03b40;
+      padding: 40px 20px;
+      line-height: 1.2;
+      text-align: center;
+  }
+  .donde { 
+      background-color: #d03b40;
+      color: #f5f0ed;
+      padding: 40px 20px;
+      line-height: 1.2;
+      text-align: center;
+  }
+  .final { 
+      background-color: #241d1b;
+      color: #f5f0ed;
+      padding: 40px 20px;
+      line-height: 1.3;
+      font-size: 14px;
+  }
+  
+  img {
+      width: 90px;
+      margin-left: 40%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  
+  
+  /* EMPEZANDO CON CSS PARA PANTALLA MEDIANA*/
+  
+  @media screen and (min-width:700px)
+  
+  {
+     .lanzador-menu {
+          display: none;
+      }
+      
+      .navegacion{
+          position: absolute;
+          top: 55px;
+          background-color:inherit;
+          right: 20px;
+      }
+      
+      .navegacion li{
+          display: inline-block;
+          padding-left: 15px;
+      }
+      
+      .navegacion a {
+          font-size:  14px;
+          font-weight: 550;
+      }
+      
+      p {
+          width: 70%;
+          margin: auto;
+      }
+      
+      .pan p {
+          padding-bottom: 40px;
+         
+      }
+      
+      .final p {
+          margin: inherit;
+          padding-left: 8%;
+      }  
+      
+      .pan {
+          padding-left: 20%;
+          padding-top: 60px;
+      }
+      
+      img {
+          margin: inherit;
+          float: left;
+          margin-right: 20px;
+      }
+      
+      
+      
+      /* EMPEZANDO CON CSS PARA PANTALLA GRANDE*/
+      
+  @media screen and (min-width:1000px)
+    
+  {
+      .encabezado {
+          padding-bottom: 200px;
+      }
+      
+     .brunch {
+         width: 50%;
+         display: inline-block;
+         min-height: 270px;
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+          
+      }
+           
+      .brunch p {
+          width: 80%;
+      }
+      .celebra {
+          width: 50%;
+          min-height: 270px;
+          float: right;
+      }
+      
+      .celebra p {
+          width: 80%;
+      }
+      
+      .desayunar {
+          padding: 15%;
+          display: inline-block;
+      }
+      
+      .pan {
+          padding-left: 10%;
+          height: 420px;
+      }
+      
+      .pan p {
+          padding-left: 10%;
+      }
+      .pan span {
+          width: 50%;
+          float: left;
+      }
+      
+      .contacta {
+          width: 50%;
+          display: inline-block;
 
-header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imagenes/indie.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-
-
-div.logo img {
-    width: 10em;
-}
-.franja {
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-.icon_menu {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    display: block;
-    text-align: center;
-    border: 2px solid #fff;
-    border-radius: 12px;
-    font-size: 1.5em;
-}
-
-.menu {
-    width: 100%;
-    margin-top: 50px;
-    z-index: 1000;
-    transition: height 0.3s linear;
-    height: 0;
-    overflow: hidden;
-}
-.mostrar {
-    height: 300px;
-}
-.link {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: 20px;
-    background: #9802d3;
-}
-
-.link:hover {
-    background: #d30203;
-}
-
-.seleccionado {
-    background: #d30203;
-}
-
-h1.titulo {
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    font-family: 'Amatic+SC';
-}
-
-.boton_cabecera {
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #d30203;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 20px;
-}
-
-.boton_cabecera:hover {
-    background: #d30203;
-}
-/*************************Estilos seccion principal************************/
-.principal {
-    width: 100%;
-}
-
-h2.titulo_principal {
-    width: 100%;
-    text-align: center;
-    color: #d30203;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.titulo_principal:after {
-    content: '';
-    width: 200px;
-    height: 4px;
-    background-color: #d30203;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-}
-
-.promo {
-    width: 100%;
-    margin: 5px;
-}
-
-.promo span [class*="fa-"] {
-    display: block;
-    text-align: center;
-    color: #d30203;
-    font-size: 80px;
-}
-h3.titulo_promo {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px; 
-}
-
-.texto_promo {
-    line-height: 30px;
-    font-size: 20px;
-}
-
-/****************Estilos seccion telefono******************/
-
-.telefono {
-    width: 100%;
-}
-.imagen_telefono {
-    width: 100%;
-}
-
-.titulo_telefono {
-    width: 100%;
-    text-align: center;
-    color: #d30203;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.titulo_telefono:after {
-    content: '';
-    width: 200px;
-    height: 4px;
-    background-color: #d30203;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-}
-
-div.imagen_telefono img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.titulo_numero {
-    width: 80px;
-    height: 80px;
-    border: 2px solid #d30203;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.texto_descripcion {
-    line-height: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/*********************************************/
-
-.tiendas {
-    width: 100%;
-}
-
-.titulo_tiendas {
-    width: 100%;
-    text-align: center;
-    color: #d30203;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.titulo_tiendas:after {
-    content: '';
-    width: 200px;
-    height: 4px;
-    background-color: #d30203;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-}
-
- .nuestras_tiendas {
-     width: 100%;
- }
-
- .titulo_tienda {
-     width: 100%;
-     text-align: center;
-     margin-top: 10px;
-     margin-bottom: 10px;
-     font-size: 25px;
- }
-
- .nuestras_tiendas img.img_tienda {
-     width: 100%;
- }
-
- .lista_tienda {
-     list-style: none;
-     line-height: 30px;
- }
-
-.nuestras_tiendas [class*="fa-"] {
-    margin: 10px;
-    color: #d30203;
-}
-
-/*******************Estilos sección Opinión de clientes********************/
-
-.reseñas {
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/clientes.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
-
-.titulo_reseñas {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 35px;
-    font-family: 'Pacifico', cursive;
-    font-weight: 100;
-    color: #fff;
-}
-
-.titulo_clientes:after {
-    display: block;
-    content: '';
-    width: 200px;
-    height: 4px;
-    background: #fff;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.testimonios {
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.texto_testimonios {
-    margin: 10px;
-    font-size: 20px;
-    line-height: 25px;
-}
-
-.imagen_perfil {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px ;
-}
-
-.nombre_perfil {
-    margin-top: -50px;
-    margin-left: 150px;
-}
-/**************Estilos footer******************/
-
-footer {
-    background: #17263c;
-    color: #fff;
-}
-
-.pie {
-    width: 100%;
-}
-
-.item_pie {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.titulo_pie {
-    width: 100%;
-    text-align: center;
-}
-
-.texto_pie {
-    margin: 10px;
-}
-
-.lista_pie {
-    list-style: none;
-}
-.link_pie {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    line-height: 30px;
-    margin-left: 10px;
-}
-
-.derechos {
-    width: 100%;
-    text-align: center;
-    display: block;
-    padding: 20px;
-}
-
-/**************Estilos responsive**************/
-
-@media screen and (min-width: 768px) {
-    h1.titulo {
-        font-size: 65px;
+      }
+      
+      .donde {
+          width: 50%;
+          display: inline-block;
+      }
     }
-
-    .promo {
-        width: 45%;
-        margin: 10px;
-    }
-    .descripcion {
-        width: 45%;
-        margin: 10px;
-    }
-    .telefono {
-        align-items: flex-start;
-    }
-    .nuestras_tiendas {
-        width: 45%;
-        margin: 10px;
-    }
-    .testimonios {
-        width: 45%;
-        margin: 10px;
-    }
-
-    .item_pie {
-        width: 45%;
-        margin: 10px;
-    }
-    .pie {
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    nav.flex {
-        justify-content: left;
-    }
-    .logo img {
-        display: block;
-        margin-top: 20px;
-
-    }
-    h1.titulo {
-        font-size: 80px;
-    }
-    .icon_menu {
-        display: none;
-    }
-    .menu {
-        display: flex;
-        width: auto;
-        height: auto;
-        margin-top: -150px;
-        margin-left: 50%;
-    }
-    .menu li {
-        list-style: none;
-    }
-    .link {
-        margin-left: 15px;
-    }
-    .nuestras_tiendas {
-        width: 23%;
-    }
-    .testimonios {
-        width: 23%;
-    }
-    .clientes {
-        align-items: flex-start;
-    }
-    .item_pie {
-        width: 31%;
-    }
-}
+  }    
