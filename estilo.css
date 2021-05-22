@@ -12,13 +12,13 @@
   .header {
     padding: 80px;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(suri/full_logo.png);
+    background-image: url(suri/full_logo.png);
     height: default;
     background-position: center;
     background-size: cover;
     }
   
-  /* Increase the font size of the heading */
+  /* En caso queramos poner un texto encima del lindo lindo logo*/
   .header h1 {
     font-size: 40px;
   }
