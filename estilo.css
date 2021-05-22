@@ -1,296 +1,87 @@
-*{
-    box-sizing: border-box   
-  }
-  /* http://meyerweb.com/eric/tools/css/reset/ 
-     v2.0 | 20110126
-     License: none (public domain)
-  */
-  
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
-  menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-  }
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
-  footer, header, hgroup, menu, nav, section {
-      display: block;
-  }
-  body {
-      line-height: 1;
-  }
-  ol, ul {
-      list-style: none;
-  }
-  blockquote, q {
-      quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-      content: '';
-      content: none;
-  }
-  table {
-      border-collapse: collapse;
-      border-spacing: 0;
-  }
-  
-  
-  
-  
-  
-  
-  /* EMPEZANDO CON CSS PARA PANTALLA PEQUEÑA*/
-  
-  h1{
-      font-size: 30px;
-      font-weight: 800;
-  }
-  
-  h2 {
-      font-size: 24px;
-      font-weight: 700;
-  }
-  
-  body{
-      font-family: 'Open Sans', sans-serif;
-  }
-  
-  .lanzador-menu {     
-      position: absolute;
-      margin-top: 57px;
-      color: white;
-      text-decoration: none;
-      right: 25px;
-      
-  }
-  
-  .logo img{
-      position: absolute;
-      margin: 40px 20px;
-      width: 120px;
-  }
-  
-  .navegacion {
-      background-color: #241d1b;
-      padding-left: 20px;
-      padding-bottom: 40px;
-      line-height: 1.3;
-  }
-  
-  .navegacion a {
-      color: aliceblue;
-      font-size: 10px;
-      text-decoration-line: none;
-  }
-  .encabezado {
-      padding: 20px;
-      line-height: 1.2;
-      background-image: url(/imagenes/indie.jpg);
-      background-size: cover;
-      color: #080808;
-      text-align: center;
-      padding-top: 130px;
-      padding-bottom: 50px;
-  }
-  
-  .brunch {
-      background-color: #d03b40;
-      color: #f5f0ed;
-      padding: 40px 20px;
-      line-height: 1.2;
-      text-align: center;
-  }
-  
-  .celebra { 
-      color:#d03b40;
-      background-color: #ded6c0;
-      padding: 40px 20px;
-      line-height: 1.2;
-      text-align: center;
-  }
-  
-  .desayunar {
-      background-image: url(Fondo2.jpg);
-      background-size: cover;
-      color: #f5f0ed;
-      padding: 40px 20px;
-      line-height: 1.2;
-      text-align: center;
-  }
-  
-  .desayunar div p {
-      border-style: solid;
-      border-color: #f5f0ed;
-      border-width: 2px;
-      padding: 10px 20px;
-      max-width: 400px;
-      margin: auto;
-  }
-  
-  .pan { 
-      background-color: #f5f0ed;
-      color: #3c3c3b;
-      padding: 15px;
-      padding-bottom: 40px;
-      line-height: 1.2;
-  }
-  .contacta { 
-      background-color: #ded6c0;
-      color: #d03b40;
-      padding: 40px 20px;
-      line-height: 1.2;
-      text-align: center;
-  }
-  .donde { 
-      background-color: #d03b40;
-      color: #f5f0ed;
-      padding: 40px 20px;
-      line-height: 1.2;
-      text-align: center;
-  }
-  .final { 
-      background-color: #241d1b;
-      color: #f5f0ed;
-      padding: 40px 20px;
-      line-height: 1.3;
-      font-size: 14px;
-  }
-  
-  img {
-      width: 90px;
-      margin-left: 40%;
-      margin-bottom: 20px;
-      margin-top: 20px;
-  }
-  
-  
-  /* EMPEZANDO CON CSS PARA PANTALLA MEDIANA*/
-  
-  @media screen and (min-width:700px)
-  
-  {
-     .lanzador-menu {
-          display: none;
-      }
-      
-      .navegacion{
-          position: absolute;
-          top: 55px;
-          background-color:inherit;
-          right: 20px;
-      }
-      
-      .navegacion li{
-          display: inline-block;
-          padding-left: 15px;
-      }
-      
-      .navegacion a {
-          font-size:  14px;
-          font-weight: 550;
-      }
-      
-      p {
-          width: 70%;
-          margin: auto;
-      }
-      
-      .pan p {
-          padding-bottom: 40px;
-         
-      }
-      
-      .final p {
-          margin: inherit;
-          padding-left: 8%;
-      }  
-      
-      .pan {
-          padding-left: 20%;
-          padding-top: 60px;
-      }
-      
-      img {
-          margin: inherit;
-          float: left;
-          margin-right: 20px;
-      }
-      
-      
-      
-      /* EMPEZANDO CON CSS PARA PANTALLA GRANDE*/
-      
-  @media screen and (min-width:1000px)
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header{
+    background: #333;
+    color: white; 
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header a {
+    color: white;
+    text-decoration:none;
+}
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.4em;
+}
+.menu-icon {
+    display: none;
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li {
+    display: inline-block;
+}
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover {
+    background:gray;
+
+}
+
+main {
+    padding-top: 12rem;
+}
+
+.footer {
+    background: gray;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+.pie-footer{
+    background: #000;
+    width:100%;
+    height: auto;
+}
+.titulo-footer{
+    color: #fff;
+   text-align: center;
+   position: relative;
+   top: 10px;
+}
+.span-subtitulo{
+    color: rgb(244,246,85)
     
-  {
-      .encabezado {
-          padding-bottom: 200px;
-      }
-      
-     .brunch {
-         width: 50%;
-         display: inline-block;
-         min-height: 270px;
-
-          
-      }
-           
-      .brunch p {
-          width: 80%;
-      }
-      .celebra {
-          width: 50%;
-          min-height: 270px;
-          float: right;
-      }
-      
-      .celebra p {
-          width: 80%;
-      }
-      
-      .desayunar {
-          padding: 15%;
-          display: inline-block;
-      }
-      
-      .pan {
-          padding-left: 10%;
-          height: 420px;
-      }
-      
-      .pan p {
-          padding-left: 10%;
-      }
-      .pan span {
-          width: 50%;
-          float: left;
-      }
-      
-      .contacta {
-          width: 50%;
-          display: inline-block;
-
-      }
-      
-      .donde {
-          width: 50%;
-          display: inline-block;
-      }
-    }
-  }    
+}
