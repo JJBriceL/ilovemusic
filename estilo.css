@@ -22,12 +22,44 @@ h1 {
     position: fixed;
     left: 0;
     top: 0;
+    margin-bottom: 0px;
     width: 100%;
+    height: 100px;
+    z-index: 5;
 }
 .header a {
     color: white;
     text-decoration:none;
 }
+#logo{
+    margin: all;
+    width:20%;
+    height: 130px;
+    background: url(/suri/full_logo.png)no-repeat right;
+    float: left;
+    margin-right: 50px;
+}
+ 
+#banner {
+    margin: auto;
+    width:76%;
+    height: 100px;
+    background-image: url(/suri/minilogo-blue.png) ;
+    float: right;
+    color:white;
+}
+ 
+#gif{
+    margin: all;
+    width:20%;
+    height: 100px;
+    background: url(/suri/minilogo-blue.png)no-repeat right;
+    float: right;
+    margin-right: 50px;
+}
+
+
+
 .logo-nav-container {
     display: flex;
     justify-content: space-between;
