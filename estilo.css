@@ -93,11 +93,49 @@
   }
   
   /* Footer */
-  .footer {
-    padding: 20px;
+  /**************Estilos footer******************/
+
+footer {
+    background: #17263c;
+    color: #fff;
+}
+
+.pie {
+    width: 100%;
+}
+
+.item_pie {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_pie {
+    width: 100%;
     text-align: center;
-    background: #ddd;
-  }
+}
+
+.texto_pie {
+    margin: 10px;
+}
+
+.lista_pie {
+    list-style: none;
+}
+.link_pie {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.derechos {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
