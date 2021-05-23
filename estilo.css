@@ -2,13 +2,13 @@
     box-sizing: border-box;
   }
   
-  /* Style the body */
+  /* Estilo principal del body */
   body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
   
-  /* Header/logo Title */
+  /* Header con loguito */
   .header {
     padding: 80px;
     text-align: center;
@@ -23,7 +23,8 @@
     font-size: 40px;
   }
 
-  /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+  /* Sticky navbar robado - 
+  alterna entre relativo y fijo, dependiendo de la posición de desplazamiento. Se coloca en una posición relativa hasta que se alcanza una posición de desplazamiento determinada en la ventana gráfica, luego se "pega" en su lugar (como la posición: fija). */
   .navbar {
     overflow: hidden;
     background-color: #333;
@@ -32,7 +33,7 @@
     top: 0;
   }
   
-  /* Style the navigation bar links */
+  /* Da el estilo a las barritas de navegación. Medio robado del profe y de otro lado */
   .navbar a {
     float: left;
     display: block;
@@ -43,25 +44,25 @@
   }
   
   
-  /* Right-aligned link */
+  /* Link alineado a la derecha */
   .navbar a.right {
     float: right;
   }
   
-  /* Change color on hover */
+  /* Cambia el color cuando pasas el mouse */
   .navbar a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Active/current link */
+  /* Link activo */
   .navbar a.active {
     background-color: #666;
     color: white;
   }
   
-  /* Column container */
-  .row {  
+  /* Contenedor de columnas */
+  .columnero {  
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
@@ -69,17 +70,17 @@
   }
   
   /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
+  /* Columna a la izquierda */
+  .lado-izquierdo-noticias {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
     background-color: #f1f1f1;
     padding: 20px;
   }
   
-  /* Main column */
-  .main {   
-    -ms-flex: 70%; /* IE10 */
+  /* La columna main */
+  .lado-principal {   
+    -ms-flex: 70%; 
     flex: 70%;
     background-color: white;
     padding: 20px;
@@ -87,16 +88,15 @@
   
   /* Fake image, just for this example */
   .fakeimg {
-    background-color: #aaa;
-    width: 100%;
+     width: 100%;
     padding: 20px;
   }
   
-  /* Footer */
+  /* Footer * robado del profe/
   /**************Estilos footer******************/
 
   footer {
-    background: #17263c;
+    background: #000103;
     color: #fff;
 }
 
@@ -136,14 +136,14 @@
     display: block;
 }
   
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - cuando la pantalla es menos ancha que 700px, hace que las dos columnas estaqueen una sobre otra en ves de sus costados */
   @media screen and (max-width: 700px) {
     .row {   
       flex-direction: column;
     }
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  /* Responsive layout - cuando la pantalla es menos ancha que 400px wide, hace que los links de navegación estaqueen una sobre otra en ves de sus costados */
   @media screen and (max-width: 400px) {
     .navbar a {
       float: none;
@@ -177,7 +177,7 @@
     font-size: 48px;
   }
   
-  .xlarge-font {
+  .alargar-font {
     font-size: 64px
   }
   
