@@ -72,16 +72,16 @@
   /* Create two unequal columns that sits next to each other */
   /* Columna a la izquierda */
   .lado-izquierdo-noticias {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
+    -ms-flex: 270%; /* IE10 */
+    flex: 27%;
     background-color: #f1f1f1;
     padding: 20px;
   }
   
   /* La columna main */
   .lado-principal {   
-    -ms-flex: 70%; 
-    flex: 70%;
+    -ms-flex: 73%; 
+    flex: 73%;
     background-color: white;
     padding: 20px;
   }
