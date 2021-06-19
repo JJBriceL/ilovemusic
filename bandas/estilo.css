@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Estilo principal del body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* Header con loguito */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url("https://raw.githubusercontent.com/JJBriceL/ilovemusic/gh-pages/suri/full_logo.png");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    }
+  
+  /* En caso queramos poner un texto encima del lindo lindo logo*/
+  .header h1 {
+    font-size: 40px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  /* Sticky navbar robado - 
+  alterna entre relativo y fijo, dependiendo de la posición de desplazamiento. Se coloca en una posición relativa hasta que se alcanza una posición de desplazamiento determinada en la ventana gráfica, luego se "pega" en su lugar (como la posición: fija). */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  /* Da el estilo a las barritas de navegación. Medio robado del profe y de otro lado */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+  /* Link alineado a la derecha */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Cambia el color cuando pasas el mouse */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Link activo */
+  .navbar a.active {
+    background-color: #666;
+    color: white;
+  }
+  
+  /* Contenedor de columnas */
+  .columnero {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Columna a la izquierda */
+  .lado-izquierdo-noticias {
+    -ms-flex: 270%; /* IE10 */
+    flex: 27%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* La columna main */
+  .lado-principal {   
+    -ms-flex: 73%; 
+    flex: 73%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /*  Para insertar una imagen */
+  .fakeimg {
+     width: 100%;
+    padding: 20px;
+  }
+  
+  /* Footer * robado del profe/
+  /**************Estilos footer******************/
+
+  footer {
+    background: #000103;
+    color: #fff;
+}
+
+.pie {
+    width: 100%;
+}
+
+.item_pie {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_pie {
+    width: 100%;
+    text-align: center;
+}
+
+.texto_pie {
+    margin: 10px;
+}
+
+.lista_pie {
+    list-style: none;
+}
+.link_pie {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.derechos {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+  
+  /* Responsive layout - cuando la pantalla es menos ancha que 700px, hace que las dos columnas estaqueen una sobre otra en ves de sus costados */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - cuando la pantalla es menos ancha que 400px wide, hace que los links de navegación estaqueen una sobre otra en ves de sus costados */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .container {
+    padding: 64px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .alargar-font {
+    font-size: 64px
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }
