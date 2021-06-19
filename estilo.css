@@ -100,8 +100,9 @@
 
 /* Caption text */
 .text {
-  color: rgba(0,0,0,0.8);
-  font-size: 15px;
+  color: rgba(255, 4, 159, 0.8);
+  font-size: 23px;
+  font:large, bolder;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
